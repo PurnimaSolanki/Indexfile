@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    border: none;
+}
+.cantainer{
+    padding: 20px 20px;
+}
+.cantainer, .Services, .more{
+    background-color: blue;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.icon i{
+    font-size: 30px;
+}
+.col{
+    width: 300px;
+    flex-grow: 1;
+}
+.navbar{
+    text-align:right;
+}
+.col .col-info{
+    padding-left: 30px;
+    display: inline;
+}
+button{
+    padding: 0 10px;
+    background:white;
+    color: black;
+}
+.Services{
+    width: 120px;
+    text-align: left;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.Services, .more{
+    display: none;
+}
+.Services-info{
+    border-bottom: 1px solid;
+    padding: 10px 10px;
+}
+.info-second, .col .col-info{
+    position: relative;
+}
+.more{
+    position: absolute;
+    top: 0px;
+    left: 120px;
+}
+.Services :hover{
+    background: darkblue;
+}
+.Services :hover .more, .navbar :hover .Services{
+    display: block;
+}
+.more-info :hover{
+    background: blue;
+}
