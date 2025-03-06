@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script></script>
+    
+</head>
+<body>
+    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptas nobis eos a ut recusandae enim nam, totam amet quidem nisi! Dignissimos fugiat minus, optio accusamus rerum nihil error voluptas.</p><br>
+   
+    <button id="t1">remove</button>
+    <button class="btn2">empty</button>
+    <button class="btn3">remove empty</button>
+    <script>
+        $("p").after("Hello After .....")
+        $("p").before("hello Brfore....")
+        $(".btn3").click(rem)
+        function rem(){
+            $("#t1").remove()
+        }
+
+        $(".btn2").click(emt)
+        function emt(){
+            $("p").empty()
+        }
+        $("p").prepend("<b>Hello I'M Prepend.....</b>i")
+        $("p").append("<b>Hello I'M Append</b>")
+
+
+
+       
+    </script>
+</body>
+</html>

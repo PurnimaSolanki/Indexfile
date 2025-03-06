@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<style>
+    *{
+        text-align: center;
+        margin: auto;
+    }
+    img{
+        margin-bottom: 10px;
+        display: block;
+    }
+</style>
+<body>
+    <h1>-:<U> BIRD IMAGE </U>:- </h1>
+    <img src="https://tse4.mm.bing.net/th?id=OIP.3l2nfzcHhMemSZooiH3B3AHaFj&pid=Api&P=0&h=180" alt="" width="50%" height="50%">
+
+    <button class="btn1">FadeOut</button>
+    <button class="btn2">FadeIn</button>
+    <button class="btn3">FadeTo</button>
+    <button class="btn4">FadeToggle</button>
+
+    <script>
+     $(".btn1").click(fadeout)
+   function fadeout(){
+       $("img").fadeOut(1500)
+   }
+   $(".btn2").click(fadeIn)
+   function fadeIn(){
+       $("img").fadeIn()
+   }
+
+   $(".btn3").dblclick(fadeto)
+   function fadeto(){
+    $("img").fadeTo("slow",.50)
+   }
+
+   $(".btn4").dblclick(fadetoggle)
+   function fadetoggle(){
+    $("img").fadeToggle(1500)
+   }
+
+   $(".btn4").dblclick(fadetoggle)
+   function fadetoggle(){
+    $("img").fadeToggle(1500)
+   }
+
+   $("h1").mouseenter(slid)
+   function slid(){
+    $("img").slideToggle(1500)
+   }
+
+    </script>
+    
+</body>
+</html>
