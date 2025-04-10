@@ -1,0 +1,34 @@
+@media(max-width: 600px){
+    .container-fluid {
+        padding: 50px 20px;
+    }
+    .design .padding, .shop .padding, .read .col-read{
+        padding: 0px!important;
+    }
+    .design .fs-1, .action .row p{
+        font-size: 50px !important;
+    }
+    .work .t-Shirt{
+        font-size:40px;
+    }
+    .work .btn, .send .row{
+        display: block;
+    }
+     .work .btn{
+        flex-direction: column;
+        gap: 10px;
+     }
+     .about .col-about{
+        text-align: left!important;
+     }
+     .shop .pera{
+        width: 100%;
+        margin: 0px;
+    }
+     .Features, .team .pera, .Professional .pera, .work .pera, .work .t-Shirt, .read .col-read{
+        text-align: center;
+     }
+     .send .name{
+        padding-bottom: 20px;
+     }   
+}
