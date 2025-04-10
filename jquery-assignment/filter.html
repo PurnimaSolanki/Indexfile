@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<style>
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .col{
+        border: 2px solid black;
+        width: 300px;
+        height: 200px;
+        flex-grow: 1;
+    
+    }
+</style>
+<body>
+    <div class="cantainer">
+        <div class="row">
+            <div class="col">co1</div>
+            <div class="col a">col2</div>
+            <div class="col">col3</div>
+            <div class="col a">col4</div>
+            <div class="col">col5</div>
+            <div class="col a">col6</div>
+            <div class="col">col7</div>
+            <div class="col a">col8</div>
+        </div>
+    </div>
+
+    <script>
+        $(".col").css("background","green")
+        $(".col").addClass(".xyz")
+
+        $(".col").filter(".a").css("background", "lightblue")
+        $(".col").not(".a").css("border", "")
+
+
+
+    </script>
+</body>
+</html>
