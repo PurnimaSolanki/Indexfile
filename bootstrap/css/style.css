@@ -1,0 +1,80 @@
+.container-fluid {
+    padding: 50px 150px;
+}
+.b1, .design, .send .col-send, .Professional .row, .team .row, .action{
+   background:  #a8d741;
+}
+.b1 span, .Features i, .action i{
+    color: #a8d741;
+}
+ .b1 span{
+    background: black;
+}
+.b1:hover  span{
+    color: white;
+}
+ .b1:hover{
+    background: white;
+}
+.design .b2:hover{
+    color: black !important;
+    background: white!important;
+    border: 2px solid black !important;
+}
+.b3:hover{
+    background: #a8d741 !important;
+}
+.b3:hover, .design .b2:hover, .b1:hover{
+    transform:  scale(1.1) rotate(5deg);
+}
+.work .col:hover, .Professional .card:hover, .shop .row:hover, .team .card:hover,.partner .cl1:hover, .read .row:hover, .Contacts .cl1:hover {
+    transform:rotate(-3deg);
+}
+.work .col:hover, .Professional .card:hover, .shop .row:hover, .team .card:hover,.partner .cl1:hover, .read .row:hover, .Contacts .cl1:hover, .b1:hover, .design .b2:hover, .b3:hover{
+    box-shadow: 0px 4px 8px black;
+}
+.work .col, .Professional .card, .b1 span{
+    transition: 2ms;
+}
+.design .fs-1{
+    font-size: 70px !important;  
+}
+.work h1, .shop h1{
+    font-size:50px;
+}
+.Professional img, .team img{
+    height: 290px;
+}
+ .Professional a{
+    position: relative;
+ }   
+.Professional a::after{
+    content: "";
+    height: 1px;
+    width: 0;
+    background: gray;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 2s;
+}
+.Professional a:hover::after{
+    width: 100%;
+}
+.about .pera{
+    border-left: 2px solid black !important;
+}
+.partner .cl1{
+    width: 400px;
+}
+.Contacts .cl1{
+    width: 600px;
+}
+.action i:hover {
+    opacity: 0.7;
+}
+.shop .pera{
+    width: 550px;
+    margin: auto;
+}
+
