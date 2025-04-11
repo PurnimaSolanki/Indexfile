@@ -1,0 +1,73 @@
+
+@mixin body($body: black) {
+    background:$body;
+    text-align: center;
+    position: relative;
+}
+$color: white;
+$col-color:  #50c878;;
+$btn-color:#704241;
+$profile-padding: 30px;
+$spacing: 0px;
+$bordar:none;
+$sizing: border-box;
+$top: 7%;
+$index: 1; 
+$weight: bold;
+$gap:10px;
+$position: absolute;
+$font: 40px;
+*{
+    box-sizing: $sizing;
+    padding: $spacing;
+    margin: $spacing;
+    border: $bordar;  
+}
+.cantainer{
+    @include body;
+}
+.Profile, .Profile a{
+    color: $color;
+}
+.cantainer .Profile {
+    padding: $profile-padding;   
+} 
+.Profile button, .backdiv{
+    background: $btn-color;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $profile-padding;
+
+    .col, .col-second{
+        width: 350px;
+        background: $col-color;
+        padding-top: $top; 
+        clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%  ); 
+         z-index: $index;        
+    }
+    .backdiv{
+        width: 600px;
+        height: 300px;
+        position: $position;
+        bottom: $spacing;
+        right: $spacing;
+        clip-path: polygon(100% 0%,100% 100%, 100% 100%, 0% 100%  );
+          z-index: $spacing;  
+    }
+}
+span{
+    font-size: $font;
+}
+p{
+    padding: 10px 0px;
+    font-size: 25px;
+}
+button{
+margin-left: $gap;
+ padding: 7px 10px;
+ font-weight: $weight;
+ border-radius: 5px;
+}

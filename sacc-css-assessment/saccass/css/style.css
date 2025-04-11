@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+.cantainer {
+  background: black;
+  text-align: center;
+  position: relative;
+}
+
+.Profile, .Profile a {
+  color: white;
+}
+
+.cantainer .Profile {
+  padding: 30px;
+}
+
+.Profile button, .backdiv {
+  background: #704241;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.row .col, .row .col-second {
+  width: 350px;
+  background: #50c878;
+  padding-top: 7%;
+  -webkit-clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%);
+  z-index: 1;
+}
+.row .backdiv {
+  width: 600px;
+  height: 300px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 0% 100%);
+          clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 0% 100%);
+  z-index: 0px;
+}
+
+span {
+  font-size: 40px;
+}
+
+p {
+  padding: 10px 0px;
+  font-size: 25px;
+}
+
+button {
+  margin-left: 10px;
+  padding: 7px 10px;
+  font-weight: bold;
+  border-radius: 5px;
+}/*# sourceMappingURL=style.css.map */
