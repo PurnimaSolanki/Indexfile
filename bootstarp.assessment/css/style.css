@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.container-fluid {
+    padding: 0px 60px!important;
+}
+.head, .pricing .btn, .pricing .card-header{
+    background: orangered;
+}
+.head{
+    color: white;
+}
+.head li{
+    padding-left: 30px;
+}
+.head .name button{
+    background:orange;
+}
+.services i{
+    color: orangered;
+    font-size: 50px;
+}
+.pricing .card{
+    border:solid orangered ;
+}
+.contact button{
+    border: 1px solid black;
+}
