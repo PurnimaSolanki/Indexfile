@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+  <div class="main ">
+    <h2>Restaurant Booking Form</h2>
+    <form id="bookingForm" >
+      <div class="form-group">
+        <label for="bookingType">Choice of Booking</label>
+        <select id="bookingType" required>
+          <option value="">--Select Booking Type--</option>
+          <option value="full">Full Day Booking</option>
+          <option value="half">Half Day Booking</option>
+          <option value="hourly">Hourly Booking</option>
+        </select>
+      </div>
+      <div class="form-group" id="nameDiv">
+        <label for="userName">User Name</label>
+        <input type="text" id="userName" required>
+      </div>
+  
+      <div class="form-group" id="mobileDiv">
+        <label for="mobile">Mobile Number</label>
+        <input type="tel" id="mobile" required>
+      </div>
+  
+      <div class="form-group" id="emailDiv">
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+      </div>
+  
+      <div class="form-group"  id="numPersonsDiv">
+        <label for="numPersons">No. of Persons</label>
+        <input type="number" id="numPersons" min="1" required>
+      </div>
+  
+      <div class="form-group hidden" id="dateGroup">
+        <label for="date">Date</label>
+        <input type="date" id="date">
+      </div>
+  
+      <div class="form-group hidden" id="slotGroup">
+        <label for="slot">Slot</label>
+        <select id="slot">
+          <option value="">--Select Slot--</option>
+          <option value="breakfast">Breakfast</option>
+          <option value="lunch">Lunch</option>
+          <option value="dinner">Dinner</option>
+        </select>
+      </div>
+  
+      <div class="form-group hidden" id="timeGroup">
+        <label for="time">Time</label>
+        <input type="time" id="time">
+      </div>
+      <button type="submit">Submit Booking</button>
+    </form>
+  </div>
+
+    <script src="/js/jsfile.js"></script>
+</body>
+</html>
