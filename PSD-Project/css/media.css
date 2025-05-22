@@ -1,0 +1,57 @@
+@media(max-width: 570px){
+    .container, .head .row{
+        padding: 20px;
+    }
+    .head, .amazing{
+        padding: 0px;
+    }
+    .head{
+        background-position: center;
+    }
+    .head{
+        position: relative;
+        overflow: hidden;
+    }
+    .navbar, .Search{
+        display: none;
+        background: #303030;
+        position: absolute;
+        top: 90px; 
+        left: -50px;
+    }
+    .head li{
+        width: 100%;
+        padding: 10px 0px;
+    }
+    .head .bar{
+        display: block;
+        padding-top: 20px; 
+    }
+    .amazing .col-info{
+        padding-left: 20px;
+    }
+    .register h1{
+        font-size: 80px;
+    }
+    .register, .dance .pera, .pricing .pera, .statistics .pera, .herbert p, .subscribe p{
+        width: 100%;
+    }
+    .amazing button{
+        width: 50%;
+        font-size: 25px;
+    }
+    .dance .tour, .statistics h1{
+        font-size:55px ;
+    }
+    .herbert h1, .amazing h1
+    {
+        padding-top: 30px;
+        font-size:45px ;
+    }
+    .subscribe h1{
+        font-size: 60px;
+    }
+    .footer, .navbar{
+        text-align: center;
+    }
+}
